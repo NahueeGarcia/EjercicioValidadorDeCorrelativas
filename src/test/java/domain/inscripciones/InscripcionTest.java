@@ -15,9 +15,9 @@ class InscripcionTest {
     @DisplayName("Probamos que cumple las correlativas")
     public void esInscripto() {
         // Creo las materias
-        Materia syo = new Materia("syo");
-        Materia ads = new Materia("ads");
-        Materia algoritmos = new Materia("algoritmos y estructuras de datos");
+        Materia syo = new Materia(1,"syo");
+        Materia algoritmos = new Materia(2,"algoritmos y estructuras de datos");
+        Materia ads = new Materia(3,"ads");
 
         // Defino las correlativas de ads
         List<Materia> correlativasAds = new ArrayList<>();
@@ -47,9 +47,9 @@ class InscripcionTest {
     @DisplayName("Probamos que no cumple las correlativas")
     public void noEsInscripto() {
         // Creo las materias
-        Materia syo = new Materia("syo");
-        Materia ads = new Materia("ads");
-        Materia algoritmos = new Materia("algoritmos y estructuras de datos");
+        Materia syo = new Materia(1,"syo");
+        Materia algoritmos = new Materia(2,"algoritmos y estructuras de datos");
+        Materia ads = new Materia(3,"ads");
 
         // Defino las correlativas de ads
         List<Materia> correlativasAds = new ArrayList<>();
